@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace TunaPianoAPI.Controllers
+﻿namespace TunaPianoAPI.Controllers
 {
-    public class SongController : Controller
+    public class SongController
     {
         public static void Map(WebApplication app)
         {
