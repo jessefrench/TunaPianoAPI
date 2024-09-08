@@ -1,11 +1,10 @@
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Http.Json;
+using TunaPianoAPI.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // add services to the container
-builder.Services.AddControllers();
-
 // learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -30,8 +29,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
-app.MapControllers();
+// controllers
+ArtistController.Map(app);
+GenreController.Map(app);
+SongController.Map(app);
 
 app.Run();
