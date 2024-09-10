@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Http.Json;
-using TunaPianoAPI.Controllers;
+using TunaPiano.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
