@@ -1,11 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TunaPianoAPI.Models;
-using TunaPianoAPI.Data;
-using System.Runtime.CompilerServices;
+using TunaPiano.Models;
+using TunaPiano.Data;
 
 public class TunaPianoDbContext : DbContext
 {
-
     public DbSet<Artist> Artists { get; set; }
     public DbSet<Genre> Genres { get; set; }
     public DbSet<Song> Songs { get; set; }

@@ -1,6 +1,6 @@
-﻿using TunaPianoAPI.Models;
+﻿using TunaPiano.Models;
 
-namespace TunaPianoAPI.Data
+namespace TunaPiano.Data
 {
     public class SongData
     {
